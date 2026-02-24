@@ -1,0 +1,10 @@
+name: Auto Reply v4
+on:
+  issue_comment:
+    types: [created]
+jobs:
+  auto-reply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "comment received"
