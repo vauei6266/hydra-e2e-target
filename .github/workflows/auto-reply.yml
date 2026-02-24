@@ -9,4 +9,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: echo "Processing comment: ${{ github.event.comment.body }}"
+        if: ${{ github.event_name == 'issue_comment' }}
       - run: echo "Comment by ${{ github.event.comment.user.login }}"
+        if: ${{ github.event_name == 'issue_comment' }}
