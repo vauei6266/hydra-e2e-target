@@ -16,6 +16,6 @@ npm install
 npm test
 ```
 
-## Contibuting
+## Contributing
 
-Please open issues for any bugs or feature reqests.
+Please open issues for any bugs or feature requests.
