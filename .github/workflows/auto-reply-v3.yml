@@ -6,4 +6,6 @@ jobs:
   auto-reply:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "comment received"
+      - uses: actions/checkout@v4
+      - run: echo "Processing comment: ${{ github.event.comment.body }}"
+      - run: echo "Comment by ${{ github.event.comment.user.login }}"
