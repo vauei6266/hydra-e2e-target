@@ -1,4 +1,21 @@
-# hydra-test-issue-comment
+# hydra-e2e-target
 
-Test repository for HYDRA E2E simulation.
-Contains an auto-reply workflow triggered by issue comments.
+Multi-workflow test repository for HYDRA E2E pipeline simulation.
+
+## Workflows
+
+- **auto-reply.yml** — Triggered by issue comments, echoes comment body
+- **label-check.yml** — Runs on pull_request_target, checks PR labels
+- **deploy-check.yml** — Runs on pull_request_target with production environment gate
+- **ci.yml** — Runs on pull_request_target with staging environment gate
+
+## Setup
+
+```bash
+npm install
+npm test
+```
+
+## Contibuting
+
+Please open issues for any bugs or feature reqests.
